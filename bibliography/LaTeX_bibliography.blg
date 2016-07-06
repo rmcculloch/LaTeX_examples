@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: LaTeX_bibliography.aux
+The style file: apalike.bst
+Database file #1: my_bibliography.bib
+Warning--there's a number but no series in Ingham1932
+You've used 5 entries,
+            1935 wiz_defined-function locations,
+            507 strings with 4390 characters,
+and the built_in function-call counts, 1803 in all, are:
+= -- 181
+> -- 47
+< -- 9
++ -- 16
+- -- 14
+* -- 129
+:= -- 308
+add.period$ -- 17
+call.type$ -- 5
+change.case$ -- 29
+chr.to.int$ -- 5
+cite$ -- 6
+duplicate$ -- 83
+empty$ -- 139
+format.name$ -- 23
+if$ -- 367
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 28
+num.names$ -- 15
+pop$ -- 33
+preamble$ -- 1
+purify$ -- 32
+quote$ -- 0
+skip$ -- 65
+stack$ -- 0
+substring$ -- 113
+swap$ -- 17
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 1
+while$ -- 15
+width$ -- 0
+write$ -- 68
+(There was 1 warning)

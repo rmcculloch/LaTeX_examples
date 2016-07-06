@@ -1,0 +1,47 @@
+%This .tex document demonstrates how to render brackets, tables and arrays.
+\documentclass{article}
+
+\begin{document}
+
+$$(x+1)$$
+$$3[2+(x+1)]$$
+%Note that the { needs to be escaped with a backslash for it to render.
+$$\{a,b,c\}$$
+%This is the same for the dollar sign which is also a reserved symbol in LaTeX.
+$$\$12.55$$
+%Note the backslash left and right to ensure the brackets reach the full height
+%of the fraction.
+$$3\left(\frac{2}{5}\right)$$
+$$3\left[\frac{2}{5}\right]$$
+$$3\left\{\frac{2}{5}\right\}$$
+
+$$\left|\frac{x}{x+1}\right|$$
+%Note when you don't want a closing bracket, LaTeX still wants to see the \right
+%command. You just need to replace the bracket with a dot so that nothing
+%renders.
+$$\left\{x^2\right.$$
+%Works the same for opening brackets
+$$\left. \frac{dy}{dx} \right|_{x=1}$$
+
+%Note that the c's following \begin{tabular} tell LaTeX to center these columns.
+%The | between the c's tell LaTeX to render vertical lines between the columns.
+%The \hlines insert horizontal lines to complete the bordered table.
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$x$ & 1 & 2 & 3 & 4 & 5\\ \hline
+$f(x)$ & 10 & 11 & 12 & 13 & 14 \\ \hline
+\end{tabular}
+
+%Note that the * at the end of \begin{eqnarray*} and \end{eqnarray*} prevent the
+%numbering from being rendered.
+%Note that the & on either side of the = and \approx tell LaTeX to line up the
+%equations at these points.
+\begin{eqnarray*}
+5x^2-9&=&x+3\\
+4x^2&=&12\\
+x^3&=&3\\
+x&\approx&\pm1.732
+\end{eqnarray*}
+
+
+\end{document}

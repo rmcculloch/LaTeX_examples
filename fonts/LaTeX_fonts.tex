@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+
+%There are a number of packages that allow you to change the fonts used by
+%Latex. Probably the best option is to use the fontspec package that allows you
+%to access and control the use of any font on your system. When using fontspec,
+%you need to compile your .tex file with either xelatex or lualatex. Fontspec
+%assumes utf8 so you shouldn't load inputenc and save your .tex files as utf8
+%which is often the default anyway. The fontspec package is quite involved and
+%well documented. Refer to fontspec.pdf for the details.
+\usepackage{fontspec}
+
+%This sets the main font for the document. By specifying the font by name (as
+%below), the system will automatically access the correct fonts for boldface and
+%italics if they are available. You can also specify the specific font file.
+%This is more involved, but allows more fine-grained control if, for example,
+%the typeface/font family you're interested has a broad range of fonts and you
+%have to be sure the system is selecting the correct ones. Again, refer to
+%fontspec.pdf for the details. One of the hardest things is determining the
+%correct name to use as it very often differs from the file names. There are a
+%number of ways to do this, but I found the easiest way is to install a font
+%manager such as Font Manager (on Linux). When you open this application, it
+%will search your system and automatically include all of your fonts. You can
+%then easily see the font names you need and scroll through and view what they
+%look like. One thing to keep in mind is that some of the fonts that display in
+%Font Manager might not be available to LaTeX. Fontspec will look in the
+%/usr/share/fonts directory (and any subdirectory) for the font name or file
+%that you've specified. I believe it also looks in the user's texmf directory.
+%So if you want the font to be available, make sure you copy the relevant file/s
+%within one of these directories. The system-wide directory is probably better
+%as the fonts will also be available to other applications. Another way to find
+%the font name is to open your word processor (e.g. Libre Office) and read the
+%names from the font drop-down selection box. Another way (for open type fonts)
+%is to enter `otfinfo -a fontfilename.otf` and it will output the font name. Not
+%sure about truetype and other font types, but there are probably other command
+%line utilities if you wish to go this way.
+\setmainfont{Lobster Two}
+
+\usepackage{lipsum}
+
+\begin{document}
+\section{Introduction}
+\lipsum[1]
+\section{Methods}
+\lipsum[2]
+
+\end{document}

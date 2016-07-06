@@ -1,0 +1,30 @@
+\begin{thebibliography}{}
+
+\bibitem[Adleman, 1980]{Adleman1980}
+Adleman, L.~M. (1980).
+\newblock On distinguishing prime numbers from composite numbers.
+\newblock In {\em Foundations of Computer Science, 1980., 21st Annual Symposium
+  on}, pages 387--406. IEEE.
+
+\bibitem[Barkley~Rosser and Schoenfeld, 1962]{BarkleyRosser1962}
+Barkley~Rosser, J. and Schoenfeld, L. (1962).
+\newblock Approximate formulas for some functions of prime numbers.
+\newblock {\em Illinois Journal of Mathematics}, 6:6z--9z.
+
+\bibitem[Crandall and Pomerance, 2006]{Crandall2006}
+Crandall, R. and Pomerance, C. (2006).
+\newblock {\em Prime numbers: a computational perspective}, volume 182.
+\newblock Springer Science \& Business Media.
+
+\bibitem[Ingham, 1932]{Ingham1932}
+Ingham, A.~E. (1932).
+\newblock {\em The distribution of prime numbers}.
+\newblock Number~30. Cambridge University Press.
+
+\bibitem[Riesel, 2012]{Riesel2012}
+Riesel, H. (2012).
+\newblock {\em Prime numbers and computer methods for factorization}, volume
+  126.
+\newblock Springer Science \& Business Media.
+
+\end{thebibliography}

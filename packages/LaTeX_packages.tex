@@ -1,0 +1,44 @@
+%This .tex document just lists a number of packages and what they do. It will
+%not compile as is.
+
+%Including this package will automatically reformat to use more of the page.
+\usepackage{fullpage}
+
+%This is a different package allowing you to reformat the page. Allows you to
+%enter specific settings for the margins. Could also use centimeters (cm).
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+
+%Another way to format with the geometry package using papersize dimensions.
+\usepackage[margin=1in, paperwidth=8.5in, paperheight=11in]{geometry}
+
+%This package allows the use of Rho and other maths symbols
+\usepackage{amssymb}
+
+%This package is for the numbering of lines. Useful for sending to people who
+%don't use LaTeX to edit a file.
+\usepackage{lineno}
+
+%This package is for landscaping pages in a document.
+\usepackage{lscape}
+
+%This package is the defacto bibliography package in LaTeX. Biblatex is the
+%other package but it may still be in a state of development and not very
+%reliable.
+\usepackage{natlib}
+
+%This package allows for the use of subfigures.
+\usepackage{subfig}
+
+%This package provides hyperreferencing within the pdf and the same with
+%citations linking to its reference.
+\usepackage[colorlinks=true]{hyperref}
+
+%This package brings in specialized symbols used in mathematics.
+\usepackage{amsfonts}
+
+%This package allows you to insert lorem ipsum text
+\usepackage[lipsum]
+
+%This package allows for the insertion of images files into our document. It
+%accepts only .png, .jpg, .gif and .pdf.
+\usepackage{graphicx}

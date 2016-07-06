@@ -1,0 +1,59 @@
+\documentclass[11pt]{article}
+
+%Note that additional packages are not required to display the following maths
+%symbols/notation
+
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{graphicx}
+
+\begin{document}
+
+%Example of math mode
+Here is some basic inline maths notation of $(x+1)$ and $(x+3)$.\\
+And here is an equation in maths display mode: $$A=x^2+4x+3$$
+
+Superscripts:
+$$2x^3$$
+%Note that curly brackets required when you have more than just a single
+%character exponent
+$$2x^{34}$$
+$$2x^{3x+4}$$
+$$2x^{3x^4+5}$$
+
+Subscripts:
+$$x_1$$
+$$x_{12}$$
+%Note that use of curly brackets allow multiple subscripting
+$${{x_1}_2}_3$$
+
+Greek letters:
+$$\pi$$
+$$\alpha$$
+$$A=\pi r^2$$
+
+Log functions:
+$$\log_5{x}$$
+$$\ln{x}$$
+
+Square roots:
+$$\sqrt{2}$$
+%Note the square brackets define the nth root. If left out it is assumed to be
+%the square root. In the case below it is the cubed root.
+$$\sqrt[3]{2}$$
+$$\sqrt{x^2+y^2}$$
+$$\sqrt{1+\sqrt{x}}$$
+
+Fractions:
+
+About $\frac{2}{3}$ of the glass is full.
+
+%Note the \displaystyle command increases the size of the fraction if it needs
+%to be easier to read
+About $\displaystyle{\frac{2}{3}}$ of the glass is full.
+$$\frac{x}{x^2+x+1}$$
+$$\frac{\sqrt{x+1}}{\sqrt{x-1}}$$
+$$\frac{1}{1+\frac{1}{x}}$$
+$$\sqrt{\frac{x}{x^2+x+1}}$$
+
+\end{document}

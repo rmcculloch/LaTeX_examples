@@ -1,0 +1,91 @@
+%This .tex document shows how to create a basic document structure including the
+%title page, table of contents, abstract and sections.
+\documentclass[12pt]{article}
+
+%Sets the table of contents depth.
+\setcounter{tocdepth}{5}
+
+%This command sets the depth to which numbers will appear for the sections. An
+%argument of -1 means that no numbers will be displayed.
+%\setcounter{secnumdepth}{-1}
+\setcounter{secnumdepth}{5}
+
+\begin{document}
+
+\title{My Practice \LaTeX{} Document}
+\author{Richard McCulloch} %You can add other author/s by adding \and authorname
+%within the parentheses.
+%Note that \maketitle will insert today's date by default anyway. You can leave
+%date out by including \date{} with nothing in the parentheses.
+\date{\today}
+\maketitle
+
+\newpage
+
+%Needs to be compiled twice before it fully renders.
+\tableofcontents
+
+\newpage
+
+%This generates an abstract as used in many journal articles.
+\abstract{Ut eget augue et odio auctor tristique. Donec a lorem a dui pharetra pulvinar?
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+Curae; Sed sit amet sapien rutrum, mollis tellus non, ornare nisi! Nullam id
+leo}
+
+%Can also do an abstract as follows and the formatting is slighly different
+%(wider margins).
+\begin{abstract}
+Ut eget augue et odio auctor tristique. Donec a lorem a dui pharetra pulvinar?
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+Curae; Sed sit amet sapien rutrum, mollis tellus non, ornare nisi! Nullam id leo
+\end{abstract}
+
+%Note that the below sections include a label and reference and an example of
+%how they are used. You need to compile twice before they correctly display.
+\section{Linear Functions}
+Ut eget augue et odio auctor tristique.Donec a lorem a dui pharetra pulvinar?
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+Curae; Sed sit amet sapien rutrum, mollis tellus non, ornare nisi!
+  \subsection{Slope-intercept Form}
+  Ut eget augue et odio auctor tristique.  Donec a lorem a dui pharetra
+  pulvinar?  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+  posuere cubilia Curae; Sed sit amet sapien rutrum, mollis tellus non, ornare
+  nisi!
+    \subsubsection{Standard Form}
+    Ut eget augue et odio auctor tristique. Donec a lorem a dui pharetra pulvinar?
+    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+    cubilia Curae; Sed sit amet sapien rutrum, mollis tellus non, ornare nisi!
+       \paragraph{Paragraph Title}
+       Ut eget augue et odio auctor tristique. Donec a lorem a dui pharetra
+       pulvinar?  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+       posuere cubilia Curae; Sed sit amet sapien rutrum, mollis tellus non,
+       ornare nisi!
+         \subparagraph{Subparagraph Title}
+         Ut eget augue et odio auctor tristique. Donec a lorem a dui pharetra
+         pulvinar?  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+         posuere cubilia Curae; Sed sit amet sapien rutrum, mollis tellus non,
+         ornare nisi!
+\section{Quadratic Functions}
+Ut eget augue et odio auctor tristique. Donec a lorem a dui pharetra pulvinar?
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+Curae; Sed sit amet sapien rutrum, mollis tellus non, ornare nisi!
+  \subsection{Vertex-slope Form}
+  Ut eget augue et odio auctor tristique. Donec a lorem a dui pharetra pulvinar?
+  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+  cubilia Curae; Sed sit amet sapien rutrum, mollis tellus non, ornare nisi!
+    \subsubsection{Standard Form}
+    Ut eget augue et odio auctor tristique. Donec a lorem a dui pharetra pulvinar?
+    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+    cubilia Curae; Sed sit amet sapien rutrum, mollis tellus non, ornare nisi!
+       \paragraph{Paragraph Title}
+       Ut eget augue et odio auctor tristique. Donec a lorem a dui pharetra
+       pulvinar?  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+       posuere cubilia Curae; Sed sit amet sapien rutrum, mollis tellus non,
+       ornare nisi!
+         \subparagraph{Subparagraph Title}
+         Ut eget augue et odio auctor tristique. Donec a lorem a dui pharetra
+         pulvinar?  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+         posuere cubilia Curae; Sed sit amet sapien rutrum, mollis tellus non,
+         ornare nisi!
+\end{document}

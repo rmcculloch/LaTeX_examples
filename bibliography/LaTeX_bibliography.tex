@@ -1,0 +1,52 @@
+%This .tex file demonstrates how to do references in LaTeX.
+%It requires compiling with BibTex as well as LaTeX.
+%BibTex references an external bibliography library/database with .bib
+%extension.
+%A good cross-platform tool for creating and storing your bibliography is
+%jabref. This can be installed through your Linux package manager.
+%To set up your database, open jabref and click file > New database. To add a
+%reference, click the plus sign then select the reference type (article, book,
+%etc}. You can either manually enter the information and will need to fill in
+%all the required fields. There are also optional fields, a place to add the
+%abstract as well as even attach the entire article as a .pdf. This is handy as
+%you can also use jabref to manage and access all your actual references.
+%A better way of adding references is by pasting in the formatted code in the
+%BibTeXsource tab. You need to remove the existing starter code already there or
+%add a comma to the end of it, paste in your reference code and then remove the
+%first line of the code you pasted. The code can obtained from various
+%reference sources, e.g. the journals themselves, Google Scholar, etc. For
+%example, the reference you find on Google Scholar will have a cite link and
+%then a BibTeX link. You then simply copy the code and paste it under the
+%BibTeXsource link in jabref and save it. Every reference requires a BibTeXkey
+%which it will probably already have unless you're entering the reference
+%manually. The location of the key is at the bottom of the Required fields tab.
+%Regardless of whether the reference has a key or not, click on the magic wand
+%icon and a new key will be generated automatically. It is likely to be better
+%than the existing key you've imported so it's recommended doing this for every
+%reference.
+%To successfully compile the document, the following steps are required:
+%1) pdflatex file.tex
+%2) bibtex file.aux
+%3) pdflatex file.tex
+%4) pdflatex file.tex
+% The first compile will display errors about the references. This is normal. It
+% will also produce a file.aux which you need to run bibtex. Two further
+% file.tex compilations are required to link up and display everything
+% correctly.
+\documentclass[12pt]{article}
+\begin{document}
+\section{Introduction}
+\cite{Adleman1980} research on distinguishing prime numbers from composite numbers.
+\section{Methods}
+\cite{BarkleyRosser1962} paper on approximate formulas for some functions of
+prime numbers.
+\section{Results}
+\cite{Crandall2006} book on prime numbers: a computational perspective
+\section{Discussion}
+\cite{Ingham1932} book on the distribution of prime numbers.
+\section{Conclusion}
+\cite{Riesel2012} book on prime numbers and computer methods for factorization.
+\bibliographystyle{apalike} %There are many other styles. Some include: plain,
+%acm, ieetr, apa-good, elsearticle-barr.
+\bibliography{my_bibliography}
+\end{document}
