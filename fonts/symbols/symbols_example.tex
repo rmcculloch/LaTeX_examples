@@ -1,0 +1,16 @@
+% This .tex document demonstrates the insertion of special symbols using
+% fontawesome.
+\documentclass{article}
+%The fontspec package is require to use fontawesome.
+\usepackage{fontspec}
+%Thw fontawesome package is required to use fontawesome.
+\usepackage{fontawesome}
+\begin{document}
+
+%You can insert many different special symbols simply by entering its command
+%(see fontawesome.pdf)
+\faBicycle{}  %Note the {} will insert a space after the symbol.
+%The alternative way of inserting a symbol is to use the \faicon command with
+%the symbol name as the argument.
+\faicon{bicycle}
+\end{document}
